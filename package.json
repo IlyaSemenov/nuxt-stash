@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-stash",
+  "version": "0.1.0",
+  "description": "Lightweight alternative to Vuex store for Nuxt.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlyaSemenov/nuxt-stash.git"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxtjs",
+    "stash",
+    "store"
+  ],
+  "author": "Ilya Semenov <ilya@semenov.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IlyaSemenov/nuxt-stash/issues"
+  },
+  "homepage": "https://github.com/IlyaSemenov/nuxt-stash#readme"
+}
