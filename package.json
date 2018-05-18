@@ -1,6 +1,6 @@
 {
   "name": "nuxt-stash",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Lightweight alternative to Vuex store for Nuxt.js",
   "main": "index.js",
   "scripts": {
