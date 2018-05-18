@@ -23,14 +23,15 @@ export default async ctx => {
 // Works the same way as the one passed by Nuxt - as with (ctx, inject) -
 // but makes the value object reactive.
 function inject (app, key, value) {
+	const protoKey = '$' + key
+	app[protoKey] = value
 	app.mixins = app.mixins || []
 	app.mixins.push({
 		data () {
-			return { [key]: value }
+			return { [key]: this.$options[protoKey] }
 		},
 	})
 	Vue.use(function () {
-		const protoKey = '$' + key
 		if (!Vue.prototype.hasOwnProperty(protoKey)) {
 			Object.defineProperty(Vue.prototype, protoKey, {
 				get () {
