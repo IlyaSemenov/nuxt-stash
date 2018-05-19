@@ -65,6 +65,11 @@ or from the script:
 
 <script>
 export default {
+	fetch ({ app, error }) {
+		if (app.$stash.user.name === 'Evil Joe') {
+			error({ message: 'You are not welcome here.' })
+		}
+	},
 	computed: {
 		user () {
 			return this.$stash.user
